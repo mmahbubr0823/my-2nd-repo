@@ -1,0 +1,14 @@
+span {
+    color: orange;
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 200px;
+}
+ul {
+    display: flex;
+}
+nav li{
+    list-style: none;
+}
