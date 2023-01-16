@@ -8,7 +8,9 @@ nav{
 }
 ul {
     display: flex;
+   
 }
 nav li{
     list-style: none;
+    margin-left: 15px;
 }
