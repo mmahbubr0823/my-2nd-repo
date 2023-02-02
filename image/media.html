@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .food img{
+            width: 75%
+            
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
+        .food{
+            border: 5px solid lightcoral;
+            border-radius: 2px;
+            padding: 10px;
+            margin: 5px;
+        }
+        @media screen and (max-width: 576px) {
+            .food{
+                background-color: mediumturquoise;
+            }
+            .container{
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        @media screen and (min-width:577px) and (max-width:750px) {
+                .container{
+                    grid-template-columns: repeat(3,1fr);
+                }
+                .food{
+                    background-color: violet;
+                }
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2>Food item-1</h2>
+            <h4>Price: 100 tk</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente iusto deserunt, nemo culpa sequi alias tempora earum debitis aut error nam voluptates, soluta ea ratione adipisci expedita perspiciatis necessitatibus eos!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2>Food item-2</h2>
+            <h4>Price: 100 tk</h4>
+            <p>Asperiores atque obcaecati non magni? Enim eos, odio corrupti, iste, aliquam rerum nobis in commodi aliquid temporibus dolorum perferendis molestiae eum et soluta. Eligendi vero minima enim quasi? Illo, modi!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2>Food item-3</h2>
+            <h4>Price: 100 tk</h4>
+            <p>Sapiente, tempora iste sed architecto assumenda officia fuga quos amet sit suscipit, aliquid magnam facere magni quam, quas beatae. Voluptatum magni qui consectetur illo rem eum deserunt amet distinctio aperiam!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2>Food item-4</h2>
+            <h4>Price: 100 tk</h4>
+            <p>Reiciendis eaque aperiam ab possimus reprehenderit laborum maiores, ipsam provident quaerat harum quidem nisi adipisci impedit quisquam corporis earum autem quod commodi, vitae aliquid doloremque ipsa! Quis nemo esse minima.</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2>Food item-5</h2>
+            <h4>Price: 100 tk</h4>
+            <p>Nesciunt nemo dignissimos laborum, inventore eius ipsa ad quam consequuntur quaerat recusandae alias facilis saepe ut, velit commodi! Asperiores similique quasi voluptatem eos veniam reprehenderit assumenda vitae pariatur reiciendis quos!</p>
+            <button>Buy Now</button>
+        </div>
+        <div class="food">
+            <img src="food.jpg" alt="">
+            <h2>Food item-6</h2>
+            <h4>Price: 100 tk</h4>
+            <p>Quod nostrum eveniet amet, dolorum accusantium unde, fugit tempora quaerat rerum similique impedit mollitia? Beatae, aliquam recusandae sapiente nemo omnis laboriosam corporis praesentium debitis, quisquam perspiciatis aspernatur, laborum ullam. Perferendis!</p>
+            <button>Buy Now</button>
+        </div>
+    </div>
+</body>
+</html>
