@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Events</title>
+</head>
+
+<body>
+  <div id="container">
+    <h4 id="my-text">My new events</h4>
+  </div>
+  <input id="input-field" type="text">
+  <button id="btn-post" disabled>Post</button>
+
+
+
+
+  <!-- link of Js -->
+  <script>
+    document.getElementById('input-field').addEventListener('keyup', function (event) {
+      const text = event.target.value;
+      const deletebtn = document.getElementById('btn-post');
+      if(text === 'delete'){
+        deletebtn.removeAttribute('disabled');
+      }
+      else{
+        deletebtn.setAttribute('disabled', true);
+      }
+    })
+    document.getElementById('btn-post').addEventListener('click', function () {
+      const myText = document.getElementById('my-text');
+      myText.style.display = 'none';
+      const btn = document.getElementById('input-field');
+      btn.value = '';
+    })
+
+        // document.getElementById('btn-post').addEventListener('click', function () {
+        //     const inputField = document.getElementById('input-field');
+        //     const inputText = inputField.value;
+        //     const myText = document.getElementById('my-text');
+        //     myText.innerText = inputText;
+        //     inputField.value= '';
+        // })
+
+      // document.getElementById('btn-post').addEventListener('click', function(){
+      //   const field = document.getElementById('input-field');
+      //   const newText = field.value;
+      //   const commentContainer = document.getElementById('container');
+      //   const newTag = document.createElement('h4');
+      //   newTag.innerText = newText;
+      //   commentContainer.appendChild(newTag);
+      //   field.value = '';
+      // })
+
+  </script>
+</body>
+
+</html>

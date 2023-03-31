@@ -15,7 +15,7 @@ function mindGame(positiveNumber){
    return result4;
 
 }
-// console.log(mindGame(positiveNumber));
+console.log(mindGame(positiveNumber));
 
 const string = 14;
 
@@ -32,5 +32,5 @@ function evenOdd(string){
     return 'odd';
    }
 }
-console.log(evenOdd(string));
+// console.log(evenOdd(string));
 

@@ -1,15 +1,17 @@
-// let num1 = 25;
-// let num2 = 40;
+let num1 = 25;
+let num2 = 40;
 
-// const gap = num1-num2;
-// console.log(gap)
+const gap = num1-num2;
+console.log(gap)
 
-// if(gap < 5){
-//     console.log('u can be friend')
-// }
-// else{
-//     console.log('not possible')
-// }
+if(gap < 5){
+    console.log('u can be friend')
+}
+else{
+    console.log('not possible')
+}
+
+
 
 function largestNum(array){
 
